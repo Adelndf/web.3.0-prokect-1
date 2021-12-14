@@ -1,5 +1,6 @@
 .CollectionCard {
   min-width: 250px;
+  max-width: 250px;
   object-fit: cover;
   background: linear-gradient(160deg, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 8%) 100%);
   overflow: hidden;
@@ -17,6 +18,7 @@
 }
 .CollectionCard > img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .CollectionCard__info {
