@@ -1,0 +1,79 @@
+.CollectionCard {
+  min-width: 250px;
+  object-fit: cover;
+  background: linear-gradient(160deg, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 8%) 100%);
+  overflow: hidden;
+  border-radius: 1.5rem;
+  color: var(--text-clr-light);
+  transition: all 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.CollectionCard:hover {
+  color: var(--text-clr);
+  transform: scale(1.02);
+}
+.CollectionCard > img {
+  width: 100%;
+  object-fit: cover;
+}
+.CollectionCard__info {
+  padding: 0.7rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.CollectionCard__index {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #333;
+}
+.CollectionCard__title {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.CollectionCard__title span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #333;
+  transform: translateX(-4rem);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.CollectionCard:hover .CollectionCard__title span {
+  transform: translateX(0rem);
+  opacity: 1;
+}
+.CollectionCard__props {
+  margin: 0.5rem 0;
+  color: #3c3c3c;
+  font-size: 0.9rem;
+  flex: 1;
+}
+.CollectionCard__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+  filter: grayscale(1);
+  transition: all 0.3s;
+}
+.CollectionCard:hover .CollectionCard__price {
+  filter: grayscale(0);
+}
+.CollectionCard__priceImg {
+  width: 1rem;
+  object-fit: contain;
+}
+.CollectionCard__priceNum {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ff61a3;
+}

@@ -1,0 +1,19 @@
+.footer {
+  height: 30px;
+  background: linear-gradient(124deg, hsl(0, 0%, 9%) 0%, hsl(0, 0%, 13%) 100%);
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  font-size: 0.8rem;
+  color: #777;
+  text-transform: capitalize;
+}
+.footer p a {
+  color: #0093e9;
+}
+.footer p a:hover {
+  color: #3eb5fa;
+}

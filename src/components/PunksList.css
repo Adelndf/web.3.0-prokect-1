@@ -1,0 +1,32 @@
+.punksList {
+  padding: 1rem 0;
+  border-top: 2px solid hsl(0, 0%, 20%);
+  position: relative;
+}
+
+.punksList__Wrapper {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 1rem;
+}
+/* width */
+.punksList__Wrapper::-webkit-scrollbar {
+  height: 7px;
+}
+/* Track */
+.punksList__Wrapper::-webkit-scrollbar-track {
+  background: #1c1c1c;
+  border-radius: 10px;
+}
+/* Handle */
+.punksList__Wrapper::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+/* Handle on hover */
+.punksList__Wrapper::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
